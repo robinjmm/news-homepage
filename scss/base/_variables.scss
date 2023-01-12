@@ -1,0 +1,30 @@
+:root {
+	// Font Colors
+	--text-color-primary: hsl(236, 13%, 42%);
+	--text-accent-white: hsl(36, 100%, 99%);
+	--text-accent-dark: hsl(240, 100%, 5%);
+	--text-accent-orange: hsl(35, 77%, 62%);
+	--text-accent-red: hsl(5, 85%, 63%);
+	--text-accent-grey: hsl(233, 8%, 79%);
+
+	// Background Colors
+	--bg-body: hsl(36, 100%, 99%);
+	--bg-sidebar: hsl(240, 100%, 5%);
+	--bg-navbar: hsl(36, 100%, 99%);
+	--bg-button: hsl(5, 85%, 63%);
+	--bg-button-hover: hsl(240, 100%, 5%);
+
+	// Font Families:
+	--ff-primary: "Inter", sans-serif;
+
+	// Font Weights
+	--fw-normal: 400;
+	--fw-bold: 700;
+	--fw-extra-bold: 800;
+}
+
+// Convert pixel values to rem
+@function toRem($value) {
+	$remValue: calc(($value / 16px) * 1rem);
+	@return $remValue;
+}

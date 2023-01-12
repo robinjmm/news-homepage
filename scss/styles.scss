@@ -1,3 +1,17 @@
 @use "base/fonts";
 
 @use "base/defaults";
+
+@use "components/articles";
+
+@use "components/nav";
+
+@use "components/buttons";
+
+@use "components/fa-icons";
+
+@use "components/sidebar";
+
+@use "layout/home";
+
+@use "layout/media-queries";

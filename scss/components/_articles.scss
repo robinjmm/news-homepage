@@ -1,0 +1,28 @@
+@use "../base/variables" as *;
+
+.article {
+	display: flex;
+	gap: toRem(25px);
+	margin-bottom: toRem(30px);
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__title {
+		display: block;
+		color: var(--text-accent-dark);
+
+		&:active {
+			color: var(--text-accent-red);
+		}
+	}
+
+	&__number {
+		color: var(--text-accent-grey);
+		font-size: toRem(30px);
+		font-weight: var(--fw-bold);
+	}
+}

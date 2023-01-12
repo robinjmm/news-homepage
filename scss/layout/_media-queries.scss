@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+
+@media (max-width: 20rem) {
+	.container {
+		width: 300px;
+	}
+
+	.secondary-nav {
+		width: 200px;
+	}
+}
