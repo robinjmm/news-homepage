@@ -9,11 +9,10 @@
 }
 
 .secondary-nav {
+	display: none;
 	position: absolute;
 	width: 250px;
 	right: 0;
-	transform: translateX(300px);
-	transition: transform 0.5s ease-in;
 
 	&__list {
 		height: 100vh;
@@ -28,6 +27,7 @@
 	&__item {
 		font-size: toRem(15px);
 		color: var(--text-accent-dark);
+		transition: color 0.2s linear;
 
 		&:active {
 			color: var(--text-accent-red);

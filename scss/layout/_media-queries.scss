@@ -9,3 +9,150 @@
 		width: 200px;
 	}
 }
+
+@media (min-width: 48rem) {
+	header {
+		position: static;
+		width: 70%;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: toRem(25px) 0;
+		justify-content: space-between;
+	}
+
+	.button-open, .button-close {
+		display: none;
+	}
+
+	.overlay {
+		display: none;
+	}
+
+	.navbar.container {
+		margin: 0;
+	}
+
+	main {
+		padding-top: 0;
+	}
+
+	.navbar {
+		width: fit-content;
+		padding-top: unset;
+		padding-bottom: unset;
+	}
+
+	.secondary-nav {
+		display: block;
+		position: static;
+		width: unset;
+
+		&__list {
+			flex-direction: row;
+			gap: toRem(20px);
+			height: unset;
+			padding-left: unset;
+			padding-top: unset;
+		}
+	}
+}
+
+@media (min-width: 75rem) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.grid-container {
+		width: 1110px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: toRem(60px) toRem(30px);
+	}
+
+	header {
+		width: 100%;
+		padding-top: toRem(50px);
+		padding-bottom: 0;
+		grid-column: 1 / 3;
+	}
+
+	main p {
+		line-height: 1.8;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: toRem(50px);
+	}
+
+	footer {
+		grid-column: 1/ 3;
+		padding-top: 0;
+	}
+
+	.secondary-nav {
+		&__list {
+			gap: toRem(45px);
+		}
+
+		&__item:hover {
+			color: var(--text-accent-red);
+		}
+	}
+
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+
+	.main__content {
+		display: flex;
+		align-items: flex-start;
+		gap: toRem(60px);
+		margin-top: toRem(35px);
+	}
+
+	.button:hover {
+		background-color: var(--bg-button-hover);
+		color: var(--text-accent-white);
+	}
+
+	div.sidebar {
+		margin-top: 0;
+	}
+
+	.sidebar {
+		&__heading {
+			font-size: toRem(36px);
+		}
+
+		&__item {
+			padding: toRem(25px) 0;
+		}
+
+		&__title:hover {
+			color: var(--text-accent-orange);
+		}
+	}
+
+	.articles {
+		grid-column: 1 / 3;
+		display: flex;
+		gap: toRem(20px);
+	}
+
+	.article {
+		margin-bottom: 0;
+
+		&__title:hover {
+			color: var(--text-accent-red);
+		}
+	}
+
+	.container.articles {
+		margin: 0;
+	}
+}

@@ -26,6 +26,7 @@ div.sidebar {
 		color: var(--text-accent-white);
 		margin-bottom: toRem(10px);
 		display: block;
+		transition: color 0.2s linear;
 
 		&:active {
 			color: var(--text-accent-orange);

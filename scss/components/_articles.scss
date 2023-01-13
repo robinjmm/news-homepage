@@ -14,6 +14,7 @@
 	&__title {
 		display: block;
 		color: var(--text-accent-dark);
+		transition: color 0.2s linear;
 
 		&:active {
 			color: var(--text-accent-red);
