@@ -9,10 +9,10 @@
 }
 
 .secondary-nav {
-	display: none;
 	position: absolute;
 	width: 250px;
-	right: 0;
+	right: -100%;
+	transition: right 0.3s ease-in;
 
 	&__list {
 		height: 100vh;

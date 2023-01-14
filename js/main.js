@@ -6,7 +6,7 @@ const overlay = document.querySelector(".js-overlay");
 
 // Event to expand the mobile navbar
 openButton.addEventListener("click", event => {
-	secondaryNav.style.display = "block";
+	secondaryNav.style.right = "0";
 	secondaryNav.style.zIndex = "2";
 	openButton.style.display = "none";
 	closeButton.style.display = "block";
@@ -15,7 +15,7 @@ openButton.addEventListener("click", event => {
 
 // Event to close the mobile navbar
 closeButton.addEventListener("click", event => {
-	secondaryNav.style.display = "none";
+	secondaryNav.style.right = "-100%";
 	openButton.style.display = "block";
 	closeButton.style.display = "none";
 	overlay.style.display = "none";
