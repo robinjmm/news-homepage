@@ -13,11 +13,11 @@
 @media (min-width: 48rem) {
 	header {
 		position: static;
-		width: 70%;
+		width: 60%;
 		max-width: 1100px;
 		margin: 0 auto;
 		padding: toRem(25px) 0;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.button-open, .button-close {

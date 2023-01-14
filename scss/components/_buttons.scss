@@ -24,8 +24,9 @@
 }
 
 .button-close {
-	position: relative;
+	position: absolute;
 	z-index: 9999;
-	display: none;
+	right: -100%;
 	cursor: pointer;
+	transition: right 0.3s ease-in;
 }

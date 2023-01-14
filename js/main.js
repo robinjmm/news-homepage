@@ -9,7 +9,7 @@ openButton.addEventListener("click", event => {
 	secondaryNav.style.right = "0";
 	secondaryNav.style.zIndex = "2";
 	openButton.style.display = "none";
-	closeButton.style.display = "block";
+	closeButton.style.right = "20px";
 	overlay.style.display = "block";
 });
 
@@ -17,6 +17,6 @@ openButton.addEventListener("click", event => {
 closeButton.addEventListener("click", event => {
 	secondaryNav.style.right = "-100%";
 	openButton.style.display = "block";
-	closeButton.style.display = "none";
+	closeButton.style.right = "-100%";
 	overlay.style.display = "none";
 });
